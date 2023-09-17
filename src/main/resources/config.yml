@@ -80,70 +80,69 @@ do_level_up_messages: true
 
 menus:
   skills:
-    name: "Скилы"
+    name: "Skills"
     tokens:
       slot: 22
       icon: NETHER_STAR
-      name: "&bТокены"
+      name: "&bTokens"
       lore:
-        - "Кол-во: %tokens%"
-        - "Можно получить прокачивая любой из скилов"
+        - "Count: %tokens%"
     combat_skill:
       slot: 10
       icon: NETHERITE_SWORD
-      name: "&3Скил: Сражения"
+      name: "&3Skill: Combat"
       lore:
-        - "&6Уровень: %level%"
-        - "&6Опыт: %xp%"
+        - "&6Level: %level%"
+        - "&6Exp: %xp%"
     mining_skill:
       slot: 16
       icon: NETHERITE_PICKAXE
-      name: "&3Скил: Копания"
+      name: "&3Skill: Mining"
       lore:
-        - "&6Уровень: %level%"
-        - "&6Опыт: %xp%"
+        - "&6Level: %level%"
+        - "&6Exp: %xp%"
   combat_menu:
-    name: "Скил: Сражения"
+    name: "Skill: combat"
     items:
       cur_level:
         slot: 10
         icon: WOODEN_SWORD
-        name: "&4Текущий уровень:"
+        name: "&4Current level:"
         lore:
-          - "&6Уровень: %level%"
-          - "&6Опыт: %xp%"
+          - "&6Level: %level%"
+          - "&6Exp: %xp%"
       next_level:
         slot: 16
         icon: NETHERITE_SWORD
-        name: "&4Следующий уровень:"
+        name: "&4Next level:"
         lore:
-          - "&6Уровень: %level%"
-          - "&6Опыт: %xp%"
+          - "&6Level: %level%"
+          - "&6Exp: %xp%"
   mining_menu:
-    name: "Скил: Копания"
+    name: "Skill: mining"
     items:
       cur_level:
         slot: 10
         icon: WOODEN_PICKAXE
-        name: "&4Текущий уровень:"
+        name: "&4Current level:"
         lore:
-          - "&6Уровень: %level%"
-          - "&6Опыт: %xp%"
+          - "&6Level: %level%"
+          - "&6Exp: %xp%"
       next_level:
         slot: 16
         icon: NETHERITE_PICKAXE
-        name: "&4Следующий уровень:"
+        name: "&4Next level:"
         lore:
-          - "&6Уровень: %level%"
-          - "&6Опыт: %xp%"
+          - "&6Level: %level%"
+          - "&6Exp: %xp%"
 
 messages:
   # use '%level%' to get action requirement level
-  low_level: "&cДля использования необходим %level% уровень!"
+  low_level: "&cThis item need %level% level!"
 
   level_up:
-    combat: "&aВы повысели уровень сражения до %level%!"
-    mining: "&aВы повысели уровень копания до %level%!"
+    combat: "&aYou got %level% combat level!"
+    mining: "&aYou got %level% mining level!"
 
   error:
-    no_permission: "&cУ вас недостаточно прав для этого"
+    no_permission: "&cYou can't do this!"
