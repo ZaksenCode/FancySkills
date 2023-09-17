@@ -1,0 +1,149 @@
+# skills level and requirement xp for it
+skills:
+  # format: '15: 7500' -> 15 - level, 7500 - xp
+  combat:
+    1: 0
+    2: 45
+    3: 65
+    4: 100
+    5: 140
+    6: 200
+    7: 270
+    8: 350
+    9: 450
+    10: 600
+    11: 750
+    12: 1000
+    13: 1250
+    14: 1500
+    15: 2000
+  mining:
+    1: 0
+    2: 45
+    3: 65
+    4: 100
+    5: 140
+    6: 200
+    7: 270
+    8: 350
+    9: 450
+    10: 600
+    11: 750
+    12: 1000
+    13: 1250
+    14: 1500
+    15: 2000
+
+# setup xp per different action
+xp:
+  mining:
+    break_block: 1
+  combat:
+    hit: 1
+    kill: 15
+
+# requirement level for use item in specific action
+# format: 'WOODEN_PICKAXE: 1' -> WOODEN_PICKAXE - item, 1 - level
+requirements:
+  mining:
+    # pickaxes
+    WOODEN_PICKAXE: 1
+    STONE_PICKAXE: 3
+    GOLDEN_PICKAXE: 5
+    IRON_PICKAXE: 7
+    DIAMOND_PICKAXE: 10
+    NETHERITE_PICKAXE: 15
+    # axes
+    WOODEN_AXE: 1
+    STONE_AXE: 4
+    GOLDEN_AXE: 6
+    IRON_AXE: 8
+    DIAMOND_AXE: 11
+    NETHERITE_AXE: 15
+  combat:
+    # swords
+    WOODEN_SWORD: 1
+    STONE_SWORD: 3
+    GOLDEN_SWORD: 5
+    IRON_SWORD: 7
+    DIAMOND_SWORD: 10
+    NETHERITE_SWORD: 15
+    # axes
+    WOODEN_AXE: 1
+    STONE_AXE: 4
+    GOLDEN_AXE: 6
+    IRON_AXE: 8
+    DIAMOND_AXE: 11
+    NETHERITE_AXE: 15
+
+do_level_up_messages: true
+
+menus:
+  skills:
+    name: "Скилы"
+    tokens:
+      slot: 22
+      icon: NETHER_STAR
+      name: "&bТокены"
+      lore:
+        - "Кол-во: %tokens%"
+        - "Можно получить прокачивая любой из скилов"
+    combat_skill:
+      slot: 10
+      icon: NETHERITE_SWORD
+      name: "&3Скил: Сражения"
+      lore:
+        - "&6Уровень: %level%"
+        - "&6Опыт: %xp%"
+    mining_skill:
+      slot: 16
+      icon: NETHERITE_PICKAXE
+      name: "&3Скил: Копания"
+      lore:
+        - "&6Уровень: %level%"
+        - "&6Опыт: %xp%"
+  combat_menu:
+    name: "Скил: Сражения"
+    items:
+      cur_level:
+        slot: 10
+        icon: WOODEN_SWORD
+        name: "&4Текущий уровень:"
+        lore:
+          - "&6Уровень: %level%"
+          - "&6Опыт: %xp%"
+      next_level:
+        slot: 16
+        icon: NETHERITE_SWORD
+        name: "&4Следующий уровень:"
+        lore:
+          - "&6Уровень: %level%"
+          - "&6Опыт: %xp%"
+  mining_menu:
+    name: "Скил: Копания"
+    items:
+      cur_level:
+        slot: 10
+        icon: WOODEN_PICKAXE
+        name: "&4Текущий уровень:"
+        lore:
+          - "&6Уровень: %level%"
+          - "&6Опыт: %xp%"
+      next_level:
+        slot: 16
+        icon: NETHERITE_PICKAXE
+        name: "&4Следующий уровень:"
+        lore:
+          - "&6Уровень: %level%"
+          - "&6Опыт: %xp%"
+
+messages:
+  # use '%level%' to get action requirement level
+  low_level: "&cДля использования необходим %level% уровень!"
+
+  level_up:
+    combat: "&aВы повысели уровень сражения до %level%!"
+    mining: "&aВы повысели уровень копания до %level%!"
+
+  error:
+    no_permission: "&cУ вас недостаточно прав для этого"

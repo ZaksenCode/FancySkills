@@ -1,0 +1,12 @@
+name: FancySkills
+version: '${project.version}'
+main: org.zaksen.fancyskills.FancySkills
+api-version: '1.16'
+authors: [Zaksen_]
+commands:
+  skills:
+    description: open skills menu
+    usage: /skills
+  skill_xp:
+    description: change skill xp
+    usage: /skill 'name' [set/add/remove] 'count' 'player'
