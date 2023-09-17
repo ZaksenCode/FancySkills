@@ -6,9 +6,7 @@ import org.zaksen.fancyskills.FancySkills;
 import org.zaksen.fancyskills.data.PlayerData;
 import org.zaksen.fancyskills.database.DatabaseManager;
 
-import java.util.ArrayList;
 import java.util.Map;
-import java.util.List;
 
 public abstract class ISkill implements Skill {
     private boolean firstTime = true;

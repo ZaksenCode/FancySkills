@@ -1,7 +1,5 @@
 package org.zaksen.fancyskills.events;
 
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -9,10 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.zaksen.fancyskills.FancySkills;
-import org.zaksen.fancyskills.data.PlayerData;
-import org.zaksen.fancyskills.database.DatabaseManager;
 import org.zaksen.fancyskills.skill.impls.CombatSkill;
 import org.zaksen.fancyskills.skill.impls.MiningSkill;
 import org.zaksen.fancyskills.util.ChatUtil;
